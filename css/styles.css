@@ -1,0 +1,21 @@
+/* Font Import */
+/* Headings, Call-to-actions, Header Navigation - Raleway */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* Body */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-main: hsl(243, 87%, 12%);
+    --primary-color-sec: hsl(238, 22%, 44%);
+    --accent-primay: hsl(224, 93%, 58%);
+    --accent-sec: hsl(224, 89%, 64%);
+    --neutral-primary: hsl(240, 75%, 98%);
+    --neutral-sec: hsl(0, 0%, 75%);
+}
