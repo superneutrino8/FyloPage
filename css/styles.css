@@ -4,13 +4,7 @@
 /* Body */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-/* CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Variables */
 :root {
     --primary-color-main: hsl(243, 87%, 12%);
     --primary-color-sec: hsl(238, 22%, 44%);
@@ -18,4 +12,52 @@
     --accent-sec: hsl(224, 89%, 64%);
     --neutral-primary: hsl(240, 75%, 98%);
     --neutral-sec: hsl(0, 0%, 75%);
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* Basic Changes */
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+}
+
+.header {
+    padding: 3.5rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header .header__logo-box .header__logo {
+    width: 14rem;
+}
+
+.header .header__link-box {
+    display: flex;
+    align-items: center;
+}
+
+.header ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+}
+
+.header ul li {
+    color: var(--primary-color-main);
+    padding: 0rem 2rem;
+    font-size: 1.4rem;
 }
