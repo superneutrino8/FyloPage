@@ -297,3 +297,13 @@ p {
     outline: none;
     border: none;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color-main);
+    height: 45vh;
+}
+
+.footer .footer__logo .footer-logo {
+}
