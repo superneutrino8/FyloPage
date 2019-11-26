@@ -215,7 +215,7 @@ p {
 
 .feature-2 .card {
     display: block;
-    margin-top: 1.5rem;
+    margin-top: 4rem;
     margin-left: 8rem;
     padding: 2rem 4rem;
     background-color: #fff;
@@ -256,4 +256,44 @@ p {
 .feature-2 .card .card__name p {
     font-size: 1rem;
     font-weight: 100;
+}
+
+/* Access */
+.access-section {
+    display: flex;
+    height: 35vh;
+    background-color: var(--primary-color-sec);
+    color: #fff;
+    align-items: center;
+}
+
+.access-section>* {
+    flex: 1;
+    /* border: 1px solid red; */
+}
+
+.access__text {
+    /* margin-top: 5rem; */
+    margin-left: 5rem;
+}
+
+.access__text p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+.access__form .feature-1__form {
+    padding: 1rem;
+    width: 70%;
+}
+
+.access__form .feature-1__form .form-group-1 {
+    margin-bottom: 1.2rem;
+}
+
+.access__form .feature-1__form .form-group-2 #feature-btn {
+    font-weight: 100;
+    outline: none;
+    border: none;
 }
