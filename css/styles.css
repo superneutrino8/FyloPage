@@ -42,6 +42,10 @@ p {
     font-size: 1.6rem;
 }
 
+::placeholder {
+    opacity: 0.2;
+}
+
 .btn {
     color: #fff;
     outline: none;
@@ -56,7 +60,7 @@ p {
 /* Main Changes */
 /* Navigation */
 .header {
-    padding: 3.5rem 6rem;
+    padding: 3.5rem 8rem;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -116,12 +120,14 @@ p {
     margin-top: 12rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    font-size: 3.5rem;
     line-height: 1.4;
     color: var(--primary-color-main);
 }
 
 .feature-1 .feature-1__text-box .para-text {
-    font-size: 2rem;
+    width: 90%;
+    font-size: 1.6rem;
     color: var(--primary-color-main);
 }
 
@@ -146,7 +152,7 @@ p {
     width: 100%;
     border-radius: 4px;
     border: 1px #888 solid;
-    padding: 1rem 2rem;
+    padding: 1.2rem 2rem;
     font-size: 1.6rem;
     flex: 1;
     transition: all 0.30s ease;
@@ -160,7 +166,7 @@ p {
 .form-group-2 #feature-btn {
     border-radius: 4px;
     border: 1px #888 solid;
-    padding: 1rem 6rem;
+    padding: 1.2rem 6rem;
     font-size: 1.6rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -198,6 +204,7 @@ p {
 .feature-2 .feature-2__text-box .heading-text {
     margin-top: 5rem;
 }
+
 
 .feature-2 .feature-2__goto {
     display: inline-block;
@@ -274,13 +281,19 @@ p {
 
 .access__text {
     /* margin-top: 5rem; */
-    margin-left: 5rem;
+    margin-left: 8rem;
+}
+
+.access__text h2 {
+    font-family: 'Raleway', sans-serif;
 }
 
 .access__text p {
-    margin-top: 1rem;
+    margin-top: 1.8rem;
     font-size: 1.5rem;
-    width: 70%;
+    line-height: 1.4;
+    width: 65%;
+    color: var(--neutral-sec);
 }
 
 .access__form .feature-1__form {
@@ -293,17 +306,88 @@ p {
 }
 
 .access__form .feature-1__form .form-group-2 #feature-btn {
-    font-weight: 100;
     outline: none;
     border: none;
 }
+
+.access__form #email {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px #888 solid;
+    padding: 1.4rem 2rem;
+    font-size: 1.6rem;
+    flex: 1;
+    transition: all 0.30s ease;
+}
+
+.access__form #email:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.access__form #feature-btn {
+    border-radius: 4px;
+    border: 1px #888 solid;
+    padding: 1.4rem 6rem;
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    flex: 1;
+    cursor: pointer;
+}
+
+/* Footer */
 
 .footer {
     display: flex;
     flex-direction: column;
     background-color: var(--primary-color-main);
     height: 45vh;
+    color: var(--neutral-sec);
+    padding: 4rem 8rem;
 }
 
-.footer .footer__logo .footer-logo {
+.footer .footer__logo {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.footer .footer_link {
+    display: flex;
+}
+
+.footer .footer_link>* {
+    flex: 1;
+}
+
+.footer_link-g ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer_link-g li {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.footer_link-g1>* {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.footer_link-g1 .footer_link-g1-details {
+    display: flex;
+    align-items: center;
+}
+
+.footer_link-g4>* {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 3.5rem;
+    font-size: 1.8rem;
+    vertical-align: middle;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 1rem;
 }
