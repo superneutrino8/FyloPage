@@ -42,6 +42,18 @@ p {
     font-size: 1.6rem;
 }
 
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1600px;
+    overflow: hidden;
+    padding: 3.5rem 8rem;
+    margin: auto;
+}
+
 ::placeholder {
     opacity: 0.2;
 }
@@ -49,44 +61,65 @@ p {
 .btn {
     color: #fff;
     outline: none;
-    border: none;
-    border-radius: 0.2rem;
+    padding: 12px 60px;
+    white-space: nowrap;
+    border-radius: 4px;
+    border: 1px #888 solid;
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .btn-primary {
     background: var(--accent-primay);
 }
 
+input[type="text"] {
+    border-radius: 4px;
+    border: 1px #888 solid;
+    padding: 1.2rem 2rem;
+    font-size: 1.6rem;
+    transition: all 0.30s ease;
+}
+
+.heading-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.4;
+    color: var(--primary-color-main);
+}
+
+.para-text {
+    font-size: 1.6rem;
+    color: var(--primary-color-main);
+}
+
 /* Main Changes */
 /* Navigation */
 .header {
-    padding: 3.5rem 8rem;
+    /* padding: 3.5rem 8rem; */
     display: flex;
     justify-content: space-between;
     text-align: center;
-    /* border: 1px solid red; */
 }
 
 .header .header__logo-box {
-    /* border: 1px solid red; */
     align-self: center;
     display: flex;
 }
 
 .header .header__logo-box .header__logo {
     width: 16rem;
-    /* border: 1px solid red; */
 }
 
 .header .header__link-box {
     display: flex;
     align-items: center;
-    /* border: 1px solid red; */
 }
 
 .header ul {
-    list-style: none;
-    text-decoration: none;
     display: flex;
 }
 
@@ -102,39 +135,27 @@ p {
     height: calc(100vh - 11.5rem);
 }
 
-/* .feature-1>* {
-    border: 1px solid red;
-} */
-
 .feature-1 .feature-1__text-box {
     flex: 1;
-    /* border: 1px solid red; */
-
 }
 
 .feature-1 .feature-1__text-box>* {
-    padding: 1rem 8rem;
+    padding: 1rem 0rem;
 }
 
 .feature-1 .feature-1__text-box .heading-text {
     margin-top: 12rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 3.5rem;
-    line-height: 1.4;
-    color: var(--primary-color-main);
 }
 
 .feature-1 .feature-1__text-box .para-text {
     width: 90%;
-    font-size: 1.6rem;
-    color: var(--primary-color-main);
 }
 
 .feature-1 .feature-1__form {
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
+    width: 90%;
 }
 
 
@@ -142,20 +163,18 @@ p {
     padding: 1rem 2rem;
 } */
 
-.form-group-1,
+.form-group-1 {
+    flex: 2;
+    margin-right: 1rem;
+}
+
 .form-group-2 {
     flex: 1;
-    margin-right: 1rem;
 }
 
 .form-group-1 #email {
     width: 100%;
-    border-radius: 4px;
-    border: 1px #888 solid;
-    padding: 1.2rem 2rem;
-    font-size: 1.6rem;
     flex: 1;
-    transition: all 0.30s ease;
 }
 
 .form-group-1 #email:focus {
@@ -164,20 +183,8 @@ p {
 }
 
 .form-group-2 #feature-btn {
-    border-radius: 4px;
-    border: 1px #888 solid;
-    padding: 1.2rem 6rem;
-    font-size: 1.6rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     flex: 1;
-    cursor: pointer;
 }
-
-.feature-1 .feature-1__form .form-group>* {
-    border: 1px solid red;
-}
-
 
 .feature-1 .feature-1__illustration-box {
     flex: 1;
@@ -197,8 +204,11 @@ p {
     background: url('/images/bg-curve-desktop.svg') no-repeat center center/cover;
 }
 
-.feature-2 {
+.container-bg {
     background-color: #f9f8fe;
+}
+
+.feature-2 {
     height: 100vh;
 }
 
@@ -206,13 +216,12 @@ p {
     margin-top: 5rem;
 }
 
-
 .feature-2 .feature-2__goto {
     display: inline-block;
     font-size: 2rem;
     color: #3c9a88;
     border-bottom: 1px solid #3c9a88;
-    margin-left: 8rem;
+    /* margin-left: 8rem; */
     margin-top: 1rem;
     padding: 0.4rem 0rem;
 }
@@ -224,10 +233,10 @@ p {
 .feature-2 .card {
     display: block;
     margin-top: 4rem;
-    margin-left: 8rem;
+    /* margin-left: 8rem; */
     padding: 2rem 4rem;
     background-color: #fff;
-    width: 80%;
+    width: 50%;
     box-shadow: 1px 1px 4px 0px #ccc;
     display: flex;
     flex-direction: column;
@@ -237,6 +246,7 @@ p {
     font-size: 1.4rem;
     line-height: 1.8;
     margin-top: 1rem;
+    width: 100%;
 }
 
 .feature-2 .card .card__profile {
@@ -264,6 +274,7 @@ p {
 .feature-2 .card .card__name p {
     font-size: 1rem;
     font-weight: 100;
+    width: 100%;
 }
 
 /* Access */
@@ -287,14 +298,14 @@ p {
 
 .access__text h2 {
     font-family: 'Raleway', sans-serif;
+    color: #fff;
 }
 
 .access__text p {
     margin-top: 1.8rem;
-    font-size: 1.5rem;
     line-height: 1.4;
     width: 65%;
-    color: var(--neutral-sec);
+    color: var(--neutral-primary);
 }
 
 .access__form .feature-1__form {
@@ -309,32 +320,15 @@ p {
 .access__form .feature-1__form .form-group-2 #feature-btn {
     outline: none;
     border: none;
+    font-weight: 700;
 }
 
 .access__form #email {
-    width: 100%;
-    border-radius: 4px;
-    border: 1px #888 solid;
-    padding: 1.4rem 2rem;
-    font-size: 1.6rem;
     flex: 1;
-    transition: all 0.30s ease;
-}
-
-.access__form #email:focus {
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    border: 1px solid rgba(81, 203, 238, 1);
 }
 
 .access__form #feature-btn {
-    border-radius: 4px;
-    border: 1px #888 solid;
-    padding: 1.4rem 6rem;
-    font-size: 1.6rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
     flex: 1;
-    cursor: pointer;
 }
 
 /* Footer */
@@ -381,6 +375,10 @@ p {
     align-items: center;
 }
 
+.footer_link-g1 .footer_link-g1-details p {
+    color: var(--neutral-sec);
+}
+
 .footer_link-g4>* {
     width: 35px;
     height: 35px;
@@ -393,41 +391,8 @@ p {
     margin-right: 1rem;
 }
 
-@media screen and (max-width: 1200px) {
-    .form-group-2 #feature-btn {
-        padding: 0.2rem 6rem;
-    }
-
-    .feature-2 .card {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .feature-1 {
-        margin-bottom: 200rem;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .feature-1>* {
-        border: 1px solid red;
-    }
-
-    .feature-1 .feature-1__text-box {
-        order: 1;
-    }
-
-    .feature-1__image {
-        padding: 1rem 4rem;
-        width: 60%;
-    }
-
-    .feature-1 .feature-1__illustration-box {
-        margin-top: 20rem;
-        display: flex;
-        justify-content: center;
+@media screen and (min-width: 375px) and (max-width: 700px) {
+    .header .header__logo-box .header__logo {
+        width: 10rem;
     }
 }
