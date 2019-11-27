@@ -69,6 +69,12 @@ ul {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: #eee;
+    color: #000;
 }
 
 .btn-primary {
@@ -126,7 +132,10 @@ input[type="text"] {
 .header ul li {
     color: var(--primary-color-main);
     padding: 0rem 2rem;
-    font-size: 1.4rem;
+}
+
+.header ul li a {
+    font-size: 1.8rem;
 }
 
 /* Feature - 1 */
@@ -215,6 +224,11 @@ input[type="text"] {
     /* margin-left: 8rem; */
     margin-top: 1rem;
     padding: 0.4rem 0rem;
+    transition: all 0.2s ease;
+}
+
+.feature-2 .feature-2__goto:hover {
+    color: #12c2a2;
 }
 
 .feature-2 .feature-2__goto .fas {
@@ -375,7 +389,7 @@ input[type="text"] {
     margin-right: 1rem;
 }
 
-@media screen and (min-width: 375px) and (max-width: 700px) {
+@media screen and (min-width: 375px) and (max-width: 1300px) {
     .header .header__logo-box .header__logo {
         width: 9rem;
     }
@@ -463,10 +477,11 @@ input[type="text"] {
     }
 
     .feature-2 .feature-2__goto {
-        display: block;
+        display: inline-block;
         text-align: center;
-        margin: auto;
-        width: 50%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .feature-2 .card {
@@ -507,62 +522,26 @@ input[type="text"] {
 
 }
 
-@media screen and (min-width: 700px) and (max-width: 1000px) {
+@media screen and (min-width: 700px) and (max-width: 1300px) {
     .header .header__logo-box .header__logo {
-        width: 12rem;
+        width: 14rem;
     }
 
     .header ul li {
         padding: 0rem 0.8rem;
     }
 
+    .header ul li a {
+        font-size: 1.8rem;
+    }
+
     .container {
         padding: 3.5rem 4rem;
     }
 
-    .btn {
-        display: block;
-        width: 70vw;
-        margin-top: 1rem;
-    }
-
-    .feature-1 {
-        flex-direction: column;
-    }
-
-    .feature-1 .feature-1__text-box {
-        order: 2;
-    }
-
-    .feature-1 .feature-1__illustration-box {
-        order: 1;
-    }
-
-    .feature-1 .feature-1__text-box .heading-text {
-        margin-top: 1rem;
-        text-align: center;
-    }
-
-    .feature-1 .feature-1__text-box .para-text {
-        text-align: center;
-    }
-
-    .feature-1__image {
-        padding: 1rem 1rem;
-        width: 40rem;
-    }
-
-    .feature-1 .feature-1__form {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .feature-1 .feature-1__form>* {
-        flex: 1;
-    }
-
-    .form-group-1 {
-        width: 70vw;
-        margin-right: 0rem;
+    .feature-2 .card {
+        margin: auto;
+        margin-top: 2rem;
+        width: 50%;
     }
 }
