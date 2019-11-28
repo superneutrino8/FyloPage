@@ -457,6 +457,7 @@ input[type="text"] {
     .feature-1 .feature-1__form {
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
 
     .feature-1 .feature-1__form>* {
