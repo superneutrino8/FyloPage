@@ -176,17 +176,17 @@ input[type="text"] {
     flex: 1;
 }
 
-.form-group-1 #email {
+.form-group-1 .email {
     width: 100%;
     flex: 1;
 }
 
-.form-group-1 #email:focus {
+.form-group-1 .email:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 1px solid rgba(81, 203, 238, 1);
 }
 
-.form-group-2 #feature-btn {
+.form-group-2 .feature-btn {
     flex: 1;
 }
 
@@ -318,17 +318,17 @@ input[type="text"] {
     margin-bottom: 1.2rem;
 }
 
-.access__form .feature-1__form .form-group-2 #feature-btn {
+.access__form .feature-1__form .form-group-2 .feature-btn {
     outline: none;
     border: none;
     font-weight: 700;
 }
 
-.access__form #email {
+.access__form .email {
     flex: 1;
 }
 
-.access__form #feature-btn {
+.access__form .feature-btn {
     flex: 1;
 }
 
